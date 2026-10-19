@@ -1,40 +1,26 @@
 [app]
 
 # (str) Title of your application
-title = Angeapp
+title = Mi App Kivy
 
 # (str) Package name
-package.name = angeapp
+package.name = miakpk
 
 # (str) Package domain (needed for android packaging)
-package.domain = org.test
+package.domain = org.kivy
 
 # (list) Source files to include (let it empty to include all files)
 source.include_exts = py,png,jpg,kv,atlas
 
-# (list) Source files to exclude (let it empty to exclude nothing)
-source.exclude_exts = spec
+# (list) Source directories
+source.dir = .
 
-# (list) List of directory to exclude (let it empty to exclude nothing)
-source.exclude_dirs = tests, bin, .git
+# (str) Application versioning (method 1)
+version = 1.0.0
 
 # (list) Application requirements
+# Add your dependencies here (e.g., kivy)
 requirements = python3,kivy
 
-# (str) Supported orientation (portrait, landscape, all)
+# (str) Supported orientations
 orientation = portrait
-
-# (list) Permissions
-android.permissions = INTERNET
-
-# (list) Supported architectures
-android.archs = arm64-v8a
-
-# (int) Target Android API, should be as high as possible.
-android.api = 33
-
-# (int) Minimum API your APK will support.
-android.minAPI = 21
-
-# (bool) Indicate whether the application should be fullscreen or not
-fullscreen = 0
